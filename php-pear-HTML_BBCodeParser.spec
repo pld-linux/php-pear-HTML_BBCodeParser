@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          HTML
-%define         _subclass       BBCodeParser
+%define		_class		HTML
+%define		_subclass	BBCodeParser
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
