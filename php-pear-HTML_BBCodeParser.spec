@@ -28,7 +28,7 @@ parser should only produce XHTML 1.0 compliant code. All tags are
 validated and so are all their attributes. It should be easy to extend
 this parser with your own tags.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Jest to parser zastêpuj±cy tagi typu UBB ich odpowiednikami HTML. Nie
