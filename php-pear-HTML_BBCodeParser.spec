@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parser to replace UBB style tags with their HTML equivalents
-Summary(pl):	%{_pearname} - parser zastêpuj±cy tagi typu UBB ich odpowiednikami HTML
+Summary(pl.UTF-8):   %{_pearname} - parser zastÄ™pujÄ…cy tagi typu UBB ich odpowiednikami HTML
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	4
@@ -33,21 +33,21 @@ this parser with your own tags.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Jest to parser zastêpuj±cy tagi typu UBB ich odpowiednikami HTML. Nie
-jest to jednak to tylko wywo³anie kilku wyra¿eñ regularnych, ale
-kompletny silnik parsuj±cy. Dziêki temu pewne jest, i¿ wszystkie tagi
-bêd± poprawnie zagnie¿d¿one, a je¶li nie, dodatkowy tag zostanie
-dodany w celu zachowania zagnie¿d¿enia. Ten parser powinien
-wyprodukowaæ kod zgodny z XHTML 1.0. Wszystkie tagi oraz ich atrybuty
-sprawdzane s± pod k±tem poprawno¶ci. Mo¿liwe jest rozszerzenie parsera
-o w³asne tagi.
+%description -l pl.UTF-8
+Jest to parser zastÄ™pujÄ…cy tagi typu UBB ich odpowiednikami HTML. Nie
+jest to jednak to tylko wywoÅ‚anie kilku wyraÅ¼eÅ„ regularnych, ale
+kompletny silnik parsujÄ…cy. DziÄ™ki temu pewne jest, iÅ¼ wszystkie tagi
+bÄ™dÄ… poprawnie zagnieÅ¼dÅ¼one, a jeÅ›li nie, dodatkowy tag zostanie
+dodany w celu zachowania zagnieÅ¼dÅ¼enia. Ten parser powinien
+wyprodukowaÄ‡ kod zgodny z XHTML 1.0. Wszystkie tagi oraz ich atrybuty
+sprawdzane sÄ… pod kÄ…tem poprawnoÅ›ci. MoÅ¼liwe jest rozszerzenie parsera
+o wÅ‚asne tagi.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -56,7 +56,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
