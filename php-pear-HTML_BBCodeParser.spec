@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parser to replace UBB style tags with their HTML equivalents
-Summary(pl.UTF-8):   %{_pearname} - parser zastępujący tagi typu UBB ich odpowiednikami HTML
+Summary(pl.UTF-8):	%{_pearname} - parser zastępujący tagi typu UBB ich odpowiednikami HTML
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	4
@@ -47,7 +47,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
