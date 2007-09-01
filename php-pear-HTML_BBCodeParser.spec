@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - parser to replace UBB style tags with their HTML equivalents
 Summary(pl.UTF-8):	%{_pearname} - parser zastępujący tagi typu UBB ich odpowiednikami HTML
 Name:		php-pear-%{_pearname}
-Version:	1.1
-Release:	4
+Version:	1.2.2
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0baca616b569dff6966ff6422b5ecdc4
+# Source0-md5:	8cb028b0ae71a63bd60f432a08546e43
 URL:		http://pear.php.net/package/HTML_BBCodeParser/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -62,9 +62,6 @@ Testy dla PEAR::%{_pearname}.
 %prep
 %pear_package_setup
 
-install -d docs/%{_pearname}
-mv ./%{php_pear_dir}/HTML/BBCodeParser/example docs/%{_pearname}
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
@@ -76,8 +73,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log
-%doc docs/%{_pearname}/example
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/%{_pearname}
