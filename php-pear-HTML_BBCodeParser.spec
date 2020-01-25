@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	HTML_BBCodeParser
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - parser to replace UBB style tags with their HTML equivalents
 Summary(pl.UTF-8):	%{pearname} - parser zastępujący tagi typu UBB ich odpowiednikami HTML
 Name:		php-pear-%{pearname}
