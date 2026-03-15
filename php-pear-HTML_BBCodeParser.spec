@@ -4,7 +4,7 @@ Summary:	%{pearname} - parser to replace UBB style tags with their HTML equivale
 Summary(pl.UTF-8):	%{pearname} - parser zastępujący tagi typu UBB ich odpowiednikami HTML
 Name:		php-pear-%{pearname}
 Version:	1.2.4
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
